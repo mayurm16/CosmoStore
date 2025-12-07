@@ -22,8 +22,8 @@ namespace CosmoStore.Domain.Models
         [Timestamp]
         public byte[] RowVersion { get; set; }
 
-        public User? User { get; set; }
+        public User? User { get; set; } = null!;
 
-        public Product Product { get; set; }
+        public Product Product { get; set; } = null!;
     }
 }

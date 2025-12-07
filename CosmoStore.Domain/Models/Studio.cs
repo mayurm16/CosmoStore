@@ -12,7 +12,7 @@ namespace CosmoStore.Domain.Models
         public string StudioName { get; set; } = null!;
 
         [ForeignKey(nameof(ParentStudio))]
-        public Guid? parentStudioID { get; set; }
+        public Guid? ParentStudioID { get; set; }
         
         public string About { get; set; } = null!;
 

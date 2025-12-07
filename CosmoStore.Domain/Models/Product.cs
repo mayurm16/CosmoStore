@@ -38,5 +38,11 @@ namespace CosmoStore.Domain.Models
 
         [InverseProperty("PublisherProducts")]
         public Studio Publisher { get; set; }
+
+        public ICollection<UserInventory> userInventories { get; set; } = null!;
+
+        public ICollection<UserWishList> userWishLists { get; set; } = null!;
+
+        public ICollection<UserLibrary> userLibraries { get; set; } = null!;
     }
 }
