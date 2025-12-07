@@ -33,8 +33,10 @@ namespace CosmoStore.Domain.Models
         [ForeignKey(nameof(Publisher))]
         public Guid ProductPublisher { get; set; }
 
+        [InverseProperty("DeveloperProducts")]
         public Studio Developer { get; set; }
 
+        [InverseProperty("PublisherProducts")]
         public Studio Publisher { get; set; }
     }
 }

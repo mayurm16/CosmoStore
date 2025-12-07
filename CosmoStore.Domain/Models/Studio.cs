@@ -21,6 +21,8 @@ namespace CosmoStore.Domain.Models
 
         public Studio? ParentStudio { get; set; }
 
+        public ICollection<Product> DeveloperProducts { get; set; } = new List<Product>();
 
+        public ICollection<Product> PublisherProducts { get; set; } = new List<Product>();
     }
 }

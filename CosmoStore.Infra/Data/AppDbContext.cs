@@ -17,6 +17,6 @@ namespace CosmoStore.Infra.Data
 
         public DbSet<UserWishList> UserWishList { get; set; }
 
-
+       
     }
 }

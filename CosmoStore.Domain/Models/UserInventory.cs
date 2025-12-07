@@ -19,7 +19,8 @@ namespace CosmoStore.Domain.Models
         [ForeignKey(nameof(User))]
         public Guid UserId { get; set; }
 
-        public byte[]? RowVersion { get; set; }
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
 
         public User? User { get; set; }
 

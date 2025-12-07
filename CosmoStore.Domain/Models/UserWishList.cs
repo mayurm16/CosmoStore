@@ -8,7 +8,7 @@ namespace CosmoStore.Domain.Models
     public class UserWishList
     {
         [Key]
-        public Guid WhishlistId {  get; set; }
+        public Guid WishlistId {  get; set; }
 
         [ForeignKey(nameof(User))]
         public Guid UserId { get; set; }

@@ -24,6 +24,10 @@ namespace CosmoStore.Domain.Models
         [Timestamp]
         public byte[] RowVersion { get; set; }
 
-        public ICollection<UserInventory> UserInverntories { get; set; } = new List<UserInventory>();
+        public ICollection<UserInventory> UserInventories { get; set; } = new List<UserInventory>();
+
+        public ICollection<UserWishList> UserWishLists { get; set; } = new List<UserWishList>();
+
+        public ICollection<UserLibrary> UserLibraries { get; set; } = new List<UserLibrary>();
     }
 }
