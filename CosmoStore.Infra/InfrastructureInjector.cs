@@ -1,10 +1,7 @@
 ﻿using CosmoStore.Infra.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CosmoStore.Infra
 {
@@ -13,6 +10,7 @@ namespace CosmoStore.Infra
         public static IServiceCollection AddInfraStructure(IServiceCollection services, string ConnectionString)
         {
             services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(ConnectionString));
+            return services;
         }
     }
 }
